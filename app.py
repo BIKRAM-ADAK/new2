@@ -1,1 +1,1 @@
-print "iiii:"
+print 'iiii'
