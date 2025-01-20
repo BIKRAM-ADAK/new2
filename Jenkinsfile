@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'feature1' 
+               git url: 'https://github.com/BIKRAM-ADAK/new2.git', branch: 'feature1' 
             }
         }
         stage('Build') {
