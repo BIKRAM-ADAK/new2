@@ -1,3 +1,6 @@
+public class Sample {
 
-
-System.out.println("My name is: " );
+    public static void main(String[] args) {
+        System.out.println("My name is: "); // Corrected line
+    }
+}
