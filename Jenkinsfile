@@ -3,12 +3,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main' // Replace with the desired branch
+                git branch: 'feature1' 
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn clean install' // Replace with your build command
+                sh 'javac Sample.java'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'java Sample'
             }
         }
     }
